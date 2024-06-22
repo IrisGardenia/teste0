@@ -775,7 +775,7 @@ margin-left: 10px;
     left: 50%; /* Posiciona a esquerda da mensagem no meio da tela */
     transform: translate(-50%, -50%); /* Centraliza vertical e horizontalmente */
     z-index: 1000; /* Garante que a mensagem esteja acima de outros elementos */
-    background-color: #28a745; /* Cor de fundo verde */
+    background-color: #1E88E5; /* Cor de fundo verde */
     color: #ffffff; /* Cor do texto branco */
     padding: 20px; /* Espaçamento interno */
     border-radius: 8px; /* Bordas arredondadas */
