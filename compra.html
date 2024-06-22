@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hermes - Finalizar Compra</title>
+   
+    <link rel="stylesheet" href="carrinho.css">
+    
+    <link rel="shortcut icon" href="assents/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+   
+  
+</head>
+<body>
+<header>
+   
+
+    <div class="top-bar">
+        <img src="assents/menu-icon.png" alt="Ícone do menu" class="menu-icon" onclick="toggleMenu()">
+        <a href="index.html" class="logo">Confirmar Compra</a>
+        <div class="icons">
+            
+                </a>
+            </div></div>
+    </div>
+        
+   
+       
+
+
+<nav>
+    <ul class="menu" id="menu">
+        <li><img src="assents/close-icon.png" width="35px" alt="Ícone para fechar o menu" class="close-icon" onclick="toggleMenu()"></li>
+        <li><h1> <b>Hermes</b></h1></li>
+      
+
+   
+    <li><p>Configurações</p></li>
+    <li class="menu-item"><a href="profile.html">Minha conta</a></li>
+    <li class="menu-item"><a href="#">Quem Somos</a></li>
+    <li class="menu-item"><a href="index.html">Voltar</a></li>
+</ul>
+</nav>
+
+<main id="carrinho01">
+    <div class="produtos-container">
+      
+    </div>
+    <div class="card-carrinho" id="produtos-carrinho">
+        <!-- Os produtos serão adicionados aqui via JavaScript -->
+    </div>
+   
+</main>
+    
+    
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="informacoesempresa">
+                    <h4>Hermes</h4>
+                </div>
+                <p>Site de Periféricos Hermes</p>
+                <p>Rua dos Periféricos, 123</p>
+                <p>Betim, MG, Brasil</p>
+                <p>Telefone: (31) 1234-5678</p>
+                <p>Email: contato@hermes.com.br</p>
+            </div>
+            <div class="col-md-6">
+                <h4>Redes Sociais</h4>
+                <p>Siga-nos nas redes sociais:</p>
+                <ul class="list-inline">
+                    <li class="list-inline-item"><a href="#">Facebook</a></li>
+                    <li class="list-inline-item"><a href="#">Instagram</a></li>
+                    <li class="list-inline-item"><a href="#">Twitter</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <p class="footer-address">Endereço: Betim, MG - Brasil</p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+
+
+
+<script>
+    
+    // Função para alternar a visibilidade do menu lateral
+    function toggleMenu() {
+        const menu = document.getElementById('menu');
+        menu.classList.toggle('open');
+    }
+    
+    // Evento para fechar o menu ao clicar fora dele
+    document.addEventListener('click', function(event) {
+        const menu = document.getElementById('menu');
+        const menuIcon = document.querySelector('.menu-icon');
+    
+        // Verifica se o clique foi fora do menu e do ícone do menu
+        if (!menu.contains(event.target) && event.target !== menuIcon) {
+            menu.classList.remove('open');
+        }
+    });
+    </script>
+</body>
+</html>
